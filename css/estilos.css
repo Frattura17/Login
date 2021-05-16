@@ -1,0 +1,80 @@
+:root {
+   --dark: #1a1d21;
+   --dark-x: #25292f;
+   --light: #ffffff;
+   --gray:  #ededed;
+}
+.bg-gray {background-color: var(--gray) !important;}
+.bg-dark {background-color: var(--dark) !important;}
+.bg-dark-x { background: var(--dark-x)  !important;}
+
+body {
+    color: whitesmoke;
+    font-size: 1.04rem;
+}
+.img-1 {
+    background-image: url(../assets/login.blog.jpeg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.col-lg-5 {
+    border: black solid 1.5px;
+}
+.form-control, button {
+    min-height: 2.8rem;
+    line-height: initial;
+}
+.form-control2 {
+    min-height: 2rem;
+    width: 60%;
+}
+.font-weight-bold {
+    font-weight: bold !important;
+}
+.h1 {
+    font-size: 1.73rem;
+}
+.pe1 {
+    font-size: 1.3rem;
+}
+.p1, .form-text {
+    font-size: 0.9rem;
+}
+.modal {
+    width: 450px;
+    justify-content: center;
+}
+.candado {
+    width: 120px;
+    border-radius: 75%;
+}
+.h5e {
+    font-size: 1rem;
+}
+#input3 {
+    font-size: 0.8rem;
+    width: 60%;
+    height: 2.2rem;
+    border-radius: 5%;
+}
+.btn-close {
+    position: absolute;
+    right: 1rem;
+}
+@media (min-width: 650px){
+    .col-lg-7 {
+      flex: 0 0 auto;
+      width: 58.3333333333%;
+    }
+}
+@media (max-width: 650px){
+    .col-lg-7 {
+      display: none;
+    }
+    .col-lg-5 {
+      width: 100%;
+    }
+}
+
+
