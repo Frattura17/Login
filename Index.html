@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-------LINK--------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/Logo_rojo.png" />
+
+    <!-- Bootstrap - CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Login Cineasta</title>
+  </head>
+  <body>
+    <!--------- NAV BAR --------->
+            <!------------>       
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: rgba(0, 0, 0, 0.45)"
+    >
+      <div class="container-md">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="assets/Logo_cineasta.simple.png"
+            alt="logo cineastas"
+            height="25px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <button
+              id="BOTON-NAV"
+              type="button"
+              class="nav-link btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Suscríbete
+            </button>
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/acerca-de-nosotros.html"
+              >Conócenos</a
+            >
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/contacto.html"
+              >Contáctanos</a
+            >
+            <a
+              id="BOTON-NAV"
+              class="nav-link btn btn-outline-light"
+              aria-current="page"
+              href="/pages/login.html"
+              >Inicia sesión</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light border-dark">
+          <div class="modal-header d-flex justify-content-center">
+            <h5 class="modal-title" id="exampleModalLabel">
+              ¡Suscríbete a CINEASTA!
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3" id="SUSCRIPCION">
+                ¡Recibirás una notificación cuando lancemos una nueva review y
+                serás el primero en enterarte de eventos, concursos, sorteos y
+                mucho más!
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Ingresa tu email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="email@ejemplo.com.ar"
+                />
+                <div id="emailHelp" class="form-text">
+                  No te preocupes, no compartiremos tu email con nadie.
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="BOTON-NAV"
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+
+            <a
+              id="BOTON-NAV"
+              class="btn btn-outline-light"
+              aria-current="page"
+              href="/pages/error404.html"
+              >Suscribirme</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--------- NAV BAR --------->
+            <!------------->  
+    <section class="SECTIONe bg-dark">
+        <!-- Contenedor -->
+        <div class=" g-0 d-flex flex-grow-0">
+          <!-- Lado Izquierdo Login -->
+          <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
+            <br><br><br>
+              <div class="px-lg-6 pt-lg-5 pb-lg-1 p-4 w-100">
+                  <img src="assets/Logo_cineasta.simple.png" width="310px" alt="">
+              </div>
+              <div class="px-lg-3 py-lg-5 p-4 w-100 align-self-center">
+                  <h1 class=" h1 font-weight-bold mb-4">Bienvenido de vuelta</h1>
+                  <form class="mb-5">
+                     <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                    <input type="email" class="form-control bg-dark-x border-0" placeholder="Ingresa tu Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                       <div id="emailHelp" class="form-text"></div>
+                     </div>
+                     <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
+                    <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Contraseña" id="exampleInputPassword1">
+
+                       <!--  Recuperar Contraseña ( Modal ) -->
+                    <a type="button" class="aE text-decoration-none font-weight-bold
+                    form-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                          >¿Has olvidado tu contraseña?</a>
+
+                     </div>
+                     <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                   </form>
+                    
+                    <!-- Modal -->
+               <div class="modal fade text-center text-white w-100" id="staticBackdrop" data-bs-backdrop= "static" data-bs-keyboard= "false" tabindex="-1" aria-labelledby= "staticBackdropLabel">
+
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modalE col-lg-12 text-center pb-lg-1 ps-lg-1 pe-lg-1">
+                            <img src="assets/candado2.jpg" class="candado pt-3 pb-3 ps-3" alt="">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <p class="pe1"><strong>¿Tienes problemas para iniciar sesíon?</strong></p>
+                            <div>
+                              <h5 class=" h5e pb-3 ps-4 pe-4">Ingresa tu correo electronico, telefono o nombre y te enviaremos un enlace para que recuperes tu cuenta</h5>
+                            </div>
+                            <div class="mb-3">
+                  <input type="email" class="bg-gray border mb-3" id="input3" placeholder="Correo electrónico, teléfono o usuario" aria-describedby="emailHelp">
+                  <button type="submit" class=" btne btn btn-primary form-control2 mb-1 border-white"> Enviar enlace de inicio de sesión</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <p class=" p1 font-weight-bold text-center text-muted">O Inicia sesión con</p>
+                   <div class="d-flex justify-content-around">
+                       <button type="submit" class="btn btn-outline-light flex-grow-1 m-2"><i class="fab fa-google lead m-2"></i>Google</button>
+                       <button type="submit" class="btn btn-outline-light flex-grow-1 m-2"><i class="fab fa-facebook-f lead m-2"></i>Facebook</button>
+                   </div>
+              </div>
+                <!-- Texto inferior -->
+              <div class="text-center px-lg-5 pt-lg-2 pb-lg-4 p-4 w-100 mt-auto">
+                  <p class="d-inline-block mb-0">¿Primera vez en Cineasta?</p> <a href="" class="text-light font-weight-bold text-decoration-none">Registrate ahora</a>
+              </div>
+          </div>
+                <!-- Lado Derecho ( Foto ) -->
+             <div class="col-lg-7 min-vh-100 img-1">
+                
+             </div>
+               
+        </div>
+    </section>
+    <!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._._._.
+     
+              FOOTER SECTION
+     
+    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+    ._._._._._._._._._._._._._._._._._. -->
+
+    <footer
+      class="text-white"
+      style="background-color: rgba(0, 0, 0, 0.45)"
+    >
+      <div class="container text-center py-3">
+        <nav class="row align-items-center">
+          <div class="col-md">
+            <div>¡Suíguenos en nuestras redes!</div>
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-facebook-square"></i> Facebook</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://twitter.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-twitter-square"></i> Twitter</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </div>
+          </div>
+          <div class="col-md d-none d-md-block">
+            <a href="index.html"
+              ><img
+                src="assets/Logo_series_y_pel.png"
+                alt="logo cineastas"
+                height="50px"
+            /></a>
+          </div>
+          <div class="col-md d-none d-lg-block">
+            <div>¡También visítanos</div>
+            <div>en nuestro canal!</div>
+            <div>Nuevo video todos los martes.</div>
+            <div>
+              <a
+                href="https://www.youtube.com/"
+                style="text-decoration: none"
+                target="_blank"
+                ><i class="fab fa-youtube"></i> YouTube</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f89b9764e8.js" crossorigin="anonymous"></script>
+  </body>
+</html>
