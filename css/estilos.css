@@ -88,7 +88,7 @@ body {
     justify-content: center;
 }
 .modalE {
-    background-color: black;
+    background-color: #1a1d21;
 }
 .candado {
     width: 120px;
@@ -103,7 +103,7 @@ body {
     height: 2.2rem;
 }
 .btne {
-    background-color: black;
+    background-color: #1a1d21;
 }
 .btne:hover {
     background-color: white;
