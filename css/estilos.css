@@ -1,0 +1,147 @@
+:root {
+   --dark: #1a1d21;
+   --dark-x: #25292f;
+   --light: #ffffff;
+   --gray:  #ededed;
+}
+.bg-gray {background-color: var(--gray) !important;}
+.bg-dark {background-color: var(--dark) !important;}
+.bg-dark-x { background: var(--dark-x)  !important;}
+
+/********* NAV BAR *********/
+/**********FOOTER*************/
+
+body {
+    background: rgb(28, 27, 51) !important;
+    background: linear-gradient(
+       90deg,
+      rgba(28, 27, 51, 1) 0%,
+      rgba(164, 15, 15, 1) 69%,
+      rgba(128, 0, 58, 1) 100%
+    ) !important;
+  }
+  #navbarNavAltMarkup {
+    justify-content: flex-end !important;
+  }
+  
+  #BOTON-NAV {
+    margin: 5px 10px 5px 10px;
+    color: white;
+  }
+  
+  #BOTON-NAV:hover {
+    color: rgb(100, 100, 100);
+  }
+  
+  #SUSCRIPCION {
+    display: flex;
+    text-align: justify;
+  }
+  footer {
+    font-size: 0.75rem !important;
+  }
+  
+  footer a {
+    color: white !important;
+  }
+  /*********LOGIN*********/
+  /**********************/
+
+.SECTIONe {
+    color: whitesmoke;
+    font-size: 1.04rem;
+}
+.img-1 {
+    background-image: url(../assets/login.blog.jpeg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.col-lg-5 {
+    border: black solid 1.5px;
+}
+.form, button {
+    min-height: 2.8rem;
+    line-height: initial;
+}
+.form-control2 {
+    min-height: 2rem;
+    width: 63%;
+}
+.font-weight-bold {
+    font-weight: bold !important;
+}
+.h1 {
+    font-size: 1.73rem;
+}
+.pe1 {
+    font-size: 1.3rem;
+}
+.p1, .form-text {
+    font-size: 0.9rem;
+}
+.aE:hover {
+    color: rgba(164, 15, 15, 1);
+}
+.modal {
+    width: 450px;
+    justify-content: center;
+}
+.modalE {
+    background-color: #1a1d21;
+}
+.candado {
+    width: 120px;
+    border-radius: 75%;
+}
+.h5e {
+    font-size: 1rem;
+}
+#input3 {
+    font-size: 0.8rem;
+    width: 63%;
+    height: 2.2rem;
+    line-height: initial;
+    margin-left: 18.5%;
+}
+.btne {
+    background-color: #1a1d21;
+    font-size: 1rem !important;
+    resize: horizontal;
+}
+.shadow {
+  border-style:solid;
+}
+.btne:hover {
+    background-color: white;
+    color: black;
+}
+.btn-close {
+    position: absolute;
+    right: 1rem;
+}
+@media (min-width: 650px){
+    .col-lg-7 {
+      flex: 0 0 auto;
+      width: 58.3333333333%;
+    }
+}
+@media (max-width: 650px){
+    .col-lg-7 {
+      display: none;
+    }
+    .col-lg-5 {
+      width: 100%;
+    }
+}
+@media (max-width: 440px){
+    .btne {
+      font-size: 0.85rem !important;
+  }
+}
+@media (max-width: 372px){
+  .btne {
+    font-size: 0.76rem !important;
+}
+}
+
