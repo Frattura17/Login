@@ -158,22 +158,20 @@
         <!-- Contenedor -->
         <div class=" g-0 d-flex flex-grow-0">
           <!-- Lado Izquierdo Login -->
-          <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
-            <br><br><br>
+          <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100"> <br><br><br>
               <div class="px-lg-6 pt-lg-5 pb-lg-1 p-4 w-100">
                   <img src="assets/Logo_cineasta.simple.png" width="310px" alt="">
               </div>
-              <div class="px-lg-3 py-lg-5 p-4 w-100 align-self-center">
+               <div class="px-lg-3 py-lg-5 p-4 w-100 align-self-center">
                   <h1 class=" h1 font-weight-bold mb-4">Bienvenido de vuelta</h1>
-                  <form class="mb-5">
+                   <!--  LOGIN  -->
+                   <form class="mb-5">
                      <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                    <input type="email" class="form form-control btn-secondary bg-dark-x border-0" placeholder="Ingresa tu Email" id="exampleInputEmail1" aria-describedby="emailHelp">
-                       <div id="emailHelp" class="form-text"></div>
-                     </div>
-                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
-                    <input type="password" class="form-control btn-secondary bg-dark-x border-0 mb-2" placeholder="Contraseña" id="exampleInputPassword1">
+                        <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                        <input type="email" class="form form-control btn-secondary bg-dark-x border-0" id="mail" placeholder="Ingresa tu Email" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"></div>
+                     <div class="mb-2">
+                        <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
+                        <input type="password" class="form form-control btn-secondary bg-dark-x border-0 mb-2" id="password" placeholder="Contraseña" id="exampleInputPassword1" >
 
                        <!--  Recuperar Contraseña ( Modal ) -->
                     <a type="button" class="aE text-decoration-none font-weight-bold
@@ -181,7 +179,7 @@
                           >¿Has olvidado tu contraseña?</a>
 
                      </div>
-                     <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                     <button type="submit" class="btn btn-primary w-100" onclick="loginUser()">Iniciar sesión</button>
                    </form>
                     
                     <!-- Modal -->
@@ -204,15 +202,15 @@
                         </div>
                       </div>
                     </div>
-                   <p class=" p1 font-weight-bold text-center text-muted">O Inicia sesión con</p>
+                   <!-- <p class=" p1 font-weight-bold text-center text-muted">O Inicia sesión con</p>
                    <div class="d-flex justify-content-around">
                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-2"><i class="fab fa-google lead m-2"></i>Google</button>
                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-2"><i class="fab fa-facebook-f lead m-2"></i>Facebook</button>
-                   </div>
+                   </div> -->
               </div>
                 <!-- Texto inferior -->
               <div class="text-center px-lg-5 pt-lg-2 pb-lg-4 p-4 w-100 mt-auto">
-                  <p class="d-inline-block mb-0">¿Primera vez en Cineasta?</p> <a href="" class="text-light font-weight-bold text-decoration-none">Registrate ahora</a>
+                  <p class="d-inline-block mb-0">¿Primera vez en Cineasta?</p> <a href="registro.html" class="text-light font-weight-bold text-decoration-none">Registrate ahora</a>
               </div>
           </div>
                 <!-- Lado Derecho ( Foto ) -->
@@ -290,5 +288,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f89b9764e8.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
