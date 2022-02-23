@@ -7,18 +7,13 @@ function loginUser () {
 let data = JSON.parse(localStorage.getItem('users'));
 
 for(let i=0;i < data; i++){
-    if(homeUser[0] == data [i,0]  && homeUser[1] == data[i,1]){
+    if(homeUser.includes(data[i][0,1])){
         acceso = true;
+        alert('Iniciaste')
     }else{
            acceso = false;
            alert('Usuario o contraseña incorrectos')
         }
     }
     
-}
-if(acceso = true){
-    console.log('iniciaste')
-    alert('INICIASTE SESION')
-}else{
-    alert('usuario o contraseña incorrectos')
 }
